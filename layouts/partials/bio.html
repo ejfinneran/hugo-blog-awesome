@@ -14,5 +14,8 @@
     {{ end }}
     {{ end }}
     <h2 class="author-name">{{ .Site.Params.author.intro }}</h2>
+    <div class="footer_social-icons">
+        {{- partial "socialIcons.html" site.Params.socialIcons -}}
+    </div>
     <p class="author-bio">{{ .Site.Params.author.description }}</p>
 </div>
